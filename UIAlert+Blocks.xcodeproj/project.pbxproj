@@ -10,15 +10,16 @@
 		4BADCAE818DE251500D75A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCAE718DE251500D75A68 /* Foundation.framework */; };
 		4BADCAEA18DE251500D75A68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCAE918DE251500D75A68 /* CoreGraphics.framework */; };
 		4BADCAEC18DE251500D75A68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCAEB18DE251500D75A68 /* UIKit.framework */; };
-		4BADCAF218DE251500D75A68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BADCAF018DE251500D75A68 /* InfoPlist.strings */; };
-		4BADCAF418DE251500D75A68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BADCAF318DE251500D75A68 /* main.m */; };
-		4BADCAF818DE251500D75A68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BADCAF718DE251500D75A68 /* AppDelegate.m */; };
-		4BADCAFA18DE251500D75A68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BADCAF918DE251500D75A68 /* Images.xcassets */; };
 		4BADCB0118DE251500D75A68 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCB0018DE251500D75A68 /* XCTest.framework */; };
 		4BADCB0218DE251500D75A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCAE718DE251500D75A68 /* Foundation.framework */; };
 		4BADCB0318DE251500D75A68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCAEB18DE251500D75A68 /* UIKit.framework */; };
 		4BADCB0B18DE251500D75A68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BADCB0918DE251500D75A68 /* InfoPlist.strings */; };
 		4BADCB0D18DE251500D75A68 /* UIAlert_BlocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BADCB0C18DE251500D75A68 /* UIAlert_BlocksTests.m */; };
+		4BD34F4B18DE315600B11AD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD34F3018DE315600B11AD5 /* AppDelegate.m */; };
+		4BD34F4C18DE315600B11AD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD34F3118DE315600B11AD5 /* main.m */; };
+		4BD34F4E18DE315600B11AD5 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD34F3618DE315600B11AD5 /* TestViewController.m */; };
+		4BD34F4F18DE315600B11AD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD34F3E18DE315600B11AD5 /* Images.xcassets */; };
+		4BD34F5418DE323500B11AD5 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD34F5318DE323500B11AD5 /* UIAlertView+Blocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +37,22 @@
 		4BADCAE718DE251500D75A68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BADCAE918DE251500D75A68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4BADCAEB18DE251500D75A68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4BADCAEF18DE251500D75A68 /* UIAlert+Blocks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIAlert+Blocks-Info.plist"; sourceTree = "<group>"; };
-		4BADCAF118DE251500D75A68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4BADCAF318DE251500D75A68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4BADCAF518DE251500D75A68 /* UIAlert+Blocks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlert+Blocks-Prefix.pch"; sourceTree = "<group>"; };
-		4BADCAF618DE251500D75A68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4BADCAF718DE251500D75A68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4BADCAF918DE251500D75A68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4BADCAFF18DE251500D75A68 /* UIAlert+BlocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIAlert+BlocksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BADCB0018DE251500D75A68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4BADCB0818DE251500D75A68 /* UIAlert+BlocksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIAlert+BlocksTests-Info.plist"; sourceTree = "<group>"; };
 		4BADCB0A18DE251500D75A68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BADCB0C18DE251500D75A68 /* UIAlert_BlocksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAlert_BlocksTests.m; sourceTree = "<group>"; };
+		4BD34F2F18DE315600B11AD5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4BD34F3018DE315600B11AD5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4BD34F3118DE315600B11AD5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BD34F3218DE315600B11AD5 /* UIAlert+Blocks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UIAlert+Blocks-Info.plist"; sourceTree = "<group>"; };
+		4BD34F3318DE315600B11AD5 /* UIAlert+Blocks-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlert+Blocks-Prefix.pch"; sourceTree = "<group>"; };
+		4BD34F3518DE315600B11AD5 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		4BD34F3618DE315600B11AD5 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		4BD34F3E18DE315600B11AD5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4BD34F4518DE315600B11AD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BD34F5218DE323500B11AD5 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		4BD34F5318DE323500B11AD5 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +82,8 @@
 		4BADCADB18DE251500D75A68 = {
 			isa = PBXGroup;
 			children = (
-				4BADCAED18DE251500D75A68 /* UIAlert+Blocks */,
+				4BD34F5118DE31AC00B11AD5 /* UIAlert+Blocks */,
+				4BADCAED18DE251500D75A68 /* UIAlert+BlocksExample */,
 				4BADCB0618DE251500D75A68 /* UIAlert+BlocksTests */,
 				4BADCAE618DE251500D75A68 /* Frameworks */,
 				4BADCAE518DE251500D75A68 /* Products */,
@@ -104,26 +110,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4BADCAED18DE251500D75A68 /* UIAlert+Blocks */ = {
+		4BADCAED18DE251500D75A68 /* UIAlert+BlocksExample */ = {
 			isa = PBXGroup;
 			children = (
-				4BADCAF618DE251500D75A68 /* AppDelegate.h */,
-				4BADCAF718DE251500D75A68 /* AppDelegate.m */,
-				4BADCAF918DE251500D75A68 /* Images.xcassets */,
-				4BADCAEE18DE251500D75A68 /* Supporting Files */,
+				4BD34F2E18DE315600B11AD5 /* Application */,
+				4BD34F3418DE315600B11AD5 /* Controllers */,
+				4BD34F3718DE315600B11AD5 /* Helpers */,
+				4BD34F3818DE315600B11AD5 /* Library */,
+				4BD34F3918DE315600B11AD5 /* Models */,
+				4BD34F3A18DE315600B11AD5 /* Resources */,
+				4BD34F4718DE315600B11AD5 /* Vendors */,
+				4BD34F4818DE315600B11AD5 /* Views */,
 			);
+			name = "UIAlert+BlocksExample";
 			path = "UIAlert+Blocks";
-			sourceTree = "<group>";
-		};
-		4BADCAEE18DE251500D75A68 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4BADCAEF18DE251500D75A68 /* UIAlert+Blocks-Info.plist */,
-				4BADCAF018DE251500D75A68 /* InfoPlist.strings */,
-				4BADCAF318DE251500D75A68 /* main.m */,
-				4BADCAF518DE251500D75A68 /* UIAlert+Blocks-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4BADCB0618DE251500D75A68 /* UIAlert+BlocksTests */ = {
@@ -142,6 +142,176 @@
 				4BADCB0918DE251500D75A68 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BD34F2E18DE315600B11AD5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4BD34F2F18DE315600B11AD5 /* AppDelegate.h */,
+				4BD34F3018DE315600B11AD5 /* AppDelegate.m */,
+				4BD34F3118DE315600B11AD5 /* main.m */,
+				4BD34F3218DE315600B11AD5 /* UIAlert+Blocks-Info.plist */,
+				4BD34F3318DE315600B11AD5 /* UIAlert+Blocks-Prefix.pch */,
+			);
+			name = Application;
+			path = "UIAlert+BlocksExample/Application";
+			sourceTree = SOURCE_ROOT;
+		};
+		4BD34F3418DE315600B11AD5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BD34F3518DE315600B11AD5 /* TestViewController.h */,
+				4BD34F3618DE315600B11AD5 /* TestViewController.m */,
+			);
+			name = Controllers;
+			path = "UIAlert+BlocksExample/Controllers";
+			sourceTree = SOURCE_ROOT;
+		};
+		4BD34F3718DE315600B11AD5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			path = "UIAlert+BlocksExample/Helpers";
+			sourceTree = SOURCE_ROOT;
+		};
+		4BD34F3818DE315600B11AD5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			path = "UIAlert+BlocksExample/Library";
+			sourceTree = SOURCE_ROOT;
+		};
+		4BD34F3918DE315600B11AD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			path = "UIAlert+BlocksExample/Models";
+			sourceTree = SOURCE_ROOT;
+		};
+		4BD34F3A18DE315600B11AD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BD34F3B18DE315600B11AD5 /* Assets */,
+				4BD34F4218DE315600B11AD5 /* Data */,
+				4BD34F4318DE315600B11AD5 /* Localizations */,
+				4BD34F4618DE315600B11AD5 /* NIBs */,
+			);
+			name = Resources;
+			path = "UIAlert+BlocksExample/Resources";
+			sourceTree = SOURCE_ROOT;
+		};
+		4BD34F3B18DE315600B11AD5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4BD34F3C18DE315600B11AD5 /* Images */,
+				4BD34F4018DE315600B11AD5 /* Sound */,
+				4BD34F4118DE315600B11AD5 /* Video */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4BD34F3C18DE315600B11AD5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4BD34F3D18DE315600B11AD5 /* Default */,
+				4BD34F3F18DE315600B11AD5 /* Icon */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4BD34F3D18DE315600B11AD5 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				4BD34F3E18DE315600B11AD5 /* Images.xcassets */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		4BD34F3F18DE315600B11AD5 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		4BD34F4018DE315600B11AD5 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		4BD34F4118DE315600B11AD5 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		4BD34F4218DE315600B11AD5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4BD34F4318DE315600B11AD5 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				4BD34F4418DE315600B11AD5 /* InfoPlist.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		4BD34F4618DE315600B11AD5 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NIBs;
+			sourceTree = "<group>";
+		};
+		4BD34F4718DE315600B11AD5 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vendors;
+			path = "UIAlert+BlocksExample/Vendors";
+			sourceTree = SOURCE_ROOT;
+		};
+		4BD34F4818DE315600B11AD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BD34F4918DE315600B11AD5 /* TableCells */,
+				4BD34F4A18DE315600B11AD5 /* TableViews */,
+			);
+			name = Views;
+			path = "UIAlert+BlocksExample/Views";
+			sourceTree = SOURCE_ROOT;
+		};
+		4BD34F4918DE315600B11AD5 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		4BD34F4A18DE315600B11AD5 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		4BD34F5118DE31AC00B11AD5 /* UIAlert+Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				4BD34F5218DE323500B11AD5 /* UIAlertView+Blocks.h */,
+				4BD34F5318DE323500B11AD5 /* UIAlertView+Blocks.m */,
+			);
+			path = "UIAlert+Blocks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BADCAF218DE251500D75A68 /* InfoPlist.strings in Resources */,
-				4BADCAFA18DE251500D75A68 /* Images.xcassets in Resources */,
+				4BD34F4F18DE315600B11AD5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +408,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BADCAF818DE251500D75A68 /* AppDelegate.m in Sources */,
-				4BADCAF418DE251500D75A68 /* main.m in Sources */,
+				4BD34F4E18DE315600B11AD5 /* TestViewController.m in Sources */,
+				4BD34F5418DE323500B11AD5 /* UIAlertView+Blocks.m in Sources */,
+				4BD34F4C18DE315600B11AD5 /* main.m in Sources */,
+				4BD34F4B18DE315600B11AD5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,18 +434,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4BADCAF018DE251500D75A68 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BADCAF118DE251500D75A68 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		4BADCB0918DE251500D75A68 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4BADCB0A18DE251500D75A68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4BD34F4418DE315600B11AD5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BD34F4518DE315600B11AD5 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -358,8 +529,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UIAlert+Blocks/UIAlert+Blocks-Prefix.pch";
-				INFOPLIST_FILE = "UIAlert+Blocks/UIAlert+Blocks-Info.plist";
+				GCC_PREFIX_HEADER = "UIAlert+BlocksExample/Application/UIAlert+Blocks-Prefix.pch";
+				INFOPLIST_FILE = "UIAlert+BlocksExample/Application/UIAlert+Blocks-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -371,8 +542,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UIAlert+Blocks/UIAlert+Blocks-Prefix.pch";
-				INFOPLIST_FILE = "UIAlert+Blocks/UIAlert+Blocks-Info.plist";
+				GCC_PREFIX_HEADER = "UIAlert+BlocksExample/Application/UIAlert+Blocks-Prefix.pch";
+				INFOPLIST_FILE = "UIAlert+BlocksExample/Application/UIAlert+Blocks-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -437,6 +608,7 @@
 				4BADCB1218DE251500D75A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BADCB1318DE251500D75A68 /* Build configuration list for PBXNativeTarget "UIAlert+BlocksTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +617,7 @@
 				4BADCB1518DE251500D75A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

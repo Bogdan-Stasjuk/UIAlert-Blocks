@@ -6,6 +6,19 @@
 //  Copyright (c) 2014 Bogdan Stasjuk. All rights reserved.
 //
 
+typedef NS_ENUM(NSUInteger, AlertTitleType)
+{
+    AlertTitleWarning,
+};
+
+typedef NS_ENUM(NSUInteger, AlertButtonType)
+{
+    AlertButtonOk,
+    AlertButtonYes,
+    AlertButtonNo,
+};
+
+
 @interface UIAlertView (Blocks)
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message;
@@ -16,5 +29,8 @@
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
   cancelButtonTitle:(NSString *)cancelButtonTitle cancelBlock:(void(^)())cancelBlock
  proceedButtonTitle:(NSString *)proceedButtonTitle proceedBlock:(void(^)())proceedBlock;
+- (id)initWithTitleType:(AlertTitleType)titleType message:(NSString *)message
+  cancelButtonType:(AlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
+ proceedButtonType:(AlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock;
 
 @end

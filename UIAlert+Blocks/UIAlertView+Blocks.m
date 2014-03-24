@@ -18,9 +18,6 @@
 
 @implementation UIAlertView (Blocks)
 
-NSString *warning   = @"Warning";
-NSString *ok        = @"OK";
-
 static NSString *cancelBlockKey = @"alertViewCancelBlock";
 static NSString *proceedBlockKey = @"alertViewProceedBlock";
 
@@ -31,7 +28,7 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
 {
-    self = [self initWithTitle:title message:message delegate:nil cancelButtonTitle:ok otherButtonTitles:nil];
+    self = [self initWithTitle:title message:message delegate:nil cancelButtonTitle:[self buttonTitleString:AlertButtonOk] otherButtonTitles:nil];
     if (self) {
         
     }
@@ -40,7 +37,7 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
 
 - (id)initWarningWithMessage:(NSString *)message
 {
-    self = [self initWithTitle:warning message:message];
+    self = [self initWithTitle:[self titleString:AlertTitleWarning] message:message];
     if (self) {
 
     }
@@ -68,6 +65,21 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
         
         [self setAssociatedBlock:cancelBlock usingKey:cancelBlockKey];
         [self setAssociatedBlock:proceedBlock usingKey:proceedBlockKey];
+    }
+    return self;
+}
+
+- (id)initWithTitleType:(AlertTitleType)titleType message:(NSString *)message
+       cancelButtonType:(AlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
+      proceedButtonType:(AlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock
+{
+    NSString *title = [self titleString:titleType];
+    NSString *cancelBtnTitle = [self buttonTitleString:cancelButtonType];
+    NSString *proceedBtnTitle = [self buttonTitleString:proceedButtonType];
+    self = [self initWithTitle:title message:message cancelButtonTitle:cancelBtnTitle cancelBlock:cancelBlock proceedButtonTitle:proceedBtnTitle proceedBlock:proceedBlock];
+    if (self) {
+        
+        
     }
     return self;
 }
@@ -108,6 +120,40 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
         
         block();
     }
+}
+
+- (NSString *)titleString:(AlertTitleType)alertTitleType
+{
+    NSArray *alertTitles = @[
+                                @"Warning",
+                             ];
+    
+    if (alertTitleType >= alertTitles.count) {
+        
+        ALog("alertTitleType >= alertTitles.count");
+        
+        return EmptyString;
+    }
+    
+    return alertTitles[alertTitleType];
+}
+
+- (NSString *)buttonTitleString:(AlertButtonType)alertButtonType
+{
+    NSArray *alertButtons = @[
+                             @"OK",
+                             @"YES",
+                             @"NO",
+                             ];
+    
+    if (alertButtonType >= alertButtons.count) {
+        
+        ALog("alertButtonType >= alertButtons.count");
+        
+        return EmptyString;
+    }
+    
+    return alertButtons[alertButtonType];
 }
 
 @end

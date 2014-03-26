@@ -22,13 +22,13 @@
 {
     [super viewDidLoad];
 
-    [[[UIAlertView alloc] initWarningWithMessage:@"Some warning message"] show];
-
-    [[[UIAlertView alloc] initWarningWithMessage:@"Warning with cancel block" andCancelBlock:^{
+    [[[UIAlertView alloc] initWithTitle:[UIAlertView getTitle:UIAlertTitleWarning] message:@"Some warning message"] show];
+    
+    [[[UIAlertView alloc] initWithTitle:[UIAlertView getTitle:UIAlertTitleWarning] message:@"Warning with cancel block" cancelButtonTitle:@"Cancel" cancelBlock:^{
         
         [[[UIAlertView alloc] initWithTitle:@"Block" message:@"It is cancel block"] show];
         
-    }] show];
+    } proceedButtonTitle:[UIAlertView getButtonTitle:UIAlertButtonOk] proceedBlock:nil] show];
     
     [[[UIAlertView alloc] initWithTitle:@"Test 2 blocks" message:@"2 blocks test.\nAre you agree?" cancelButtonTitle:@"NO" cancelBlock:^{
         

@@ -11,6 +11,10 @@
 #import <objc/runtime.h>
 
 
+#define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define EmptyString @""
+
+
 @interface UIAlertView () <UIAlertViewDelegate>
 
 @end
@@ -24,44 +28,60 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
 
 #pragma mark - Public methods
 
-#pragma mark -init
+#pragma mark -static
+
++ (NSString *)getTitle:(UIAlertTitleType)alertTitleType
+{
+    NSArray *alertTitles = @[
+                             @"Warning",
+                             ];
+    
+    if (alertTitleType >= alertTitles.count) {
+        
+        ALog("alertTitleType beyond the alertTitles array");
+        
+        return EmptyString;
+    }
+    
+    return alertTitles[alertTitleType];
+}
+
++ (NSString *)getButtonTitle:(UIAlertButtonType)alertButtonType
+{
+    NSArray *alertButtons = @[
+                              @"OK",
+                              @"YES",
+                              @"NO",
+                              ];
+    
+    if (alertButtonType >= alertButtons.count) {
+        
+        ALog("alertButtonType beyond the alertButtonTitles array");
+        
+        return EmptyString;
+    }
+    
+    return alertButtons[alertButtonType];
+}
+
+
+#pragma mark -nonstatic
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
 {
-    self = [self initWithTitle:title message:message delegate:nil cancelButtonTitle:[self buttonTitleString:AlertButtonOk] otherButtonTitles:nil];
+    self = [self initWithTitle:title message:message delegate:nil cancelButtonTitle:[[self class] getButtonTitle:UIAlertButtonOk] otherButtonTitles:nil];
     if (self) {
         
     }
     return self;
 }
 
-- (id)initWithTitleType:(AlertTitleType)titleType message:(NSString *)message
+- (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message
 {
-    NSString *title = [self titleString:titleType];
+    NSString *title = [[self class] getTitle:titleType];
     self = [self initWithTitle:title message:message];
     if (self) {
         
-    }
-    return self;
-}
-
-- (id)initWarningWithMessage:(NSString *)message
-{
-    self = [self initWithTitle:[self titleString:AlertTitleWarning] message:message];
-    if (self) {
-
-    }
-    return self;
-}
-
-- (id)initWarningWithMessage:(NSString *)message andCancelBlock:(void(^)())cancelBlock
-{
-    self = [self initWarningWithMessage:message];
-    if (self) {
-        
-        [self setAssociatedBlock:cancelBlock usingKey:cancelBlockKey];
-        
-        self.delegate = self;
     }
     return self;
 }
@@ -80,11 +100,11 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
 }
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
-       cancelButtonType:(AlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
-      proceedButtonType:(AlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock
+       cancelButtonType:(UIAlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
+      proceedButtonType:(UIAlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock
 {
-    NSString *cancelBtnTitle = [self buttonTitleString:cancelButtonType];
-    NSString *proceedBtnTitle = [self buttonTitleString:proceedButtonType];
+    NSString *cancelBtnTitle = [[self class] getButtonTitle:cancelButtonType];
+    NSString *proceedBtnTitle = [[self class] getButtonTitle:proceedButtonType];
     self = [self initWithTitle:title message:message cancelButtonTitle:cancelBtnTitle cancelBlock:cancelBlock proceedButtonTitle:proceedBtnTitle proceedBlock:proceedBlock];
     if (self) {
         
@@ -92,13 +112,13 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
     return self;
 }
 
-- (id)initWithTitleType:(AlertTitleType)titleType message:(NSString *)message
-       cancelButtonType:(AlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
-      proceedButtonType:(AlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock
+- (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message
+       cancelButtonType:(UIAlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
+      proceedButtonType:(UIAlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock
 {
-    NSString *title = [self titleString:titleType];
-    NSString *cancelBtnTitle = [self buttonTitleString:cancelButtonType];
-    NSString *proceedBtnTitle = [self buttonTitleString:proceedButtonType];
+    NSString *title = [[self class] getTitle:titleType];
+    NSString *cancelBtnTitle = [[self class] getButtonTitle:cancelButtonType];
+    NSString *proceedBtnTitle = [[self class] getButtonTitle:proceedButtonType];
     self = [self initWithTitle:title message:message cancelButtonTitle:cancelBtnTitle cancelBlock:cancelBlock proceedButtonTitle:proceedBtnTitle proceedBlock:proceedBlock];
     if (self) {
         
@@ -142,40 +162,6 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
         
         block();
     }
-}
-
-- (NSString *)titleString:(AlertTitleType)alertTitleType
-{
-    NSArray *alertTitles = @[
-                                @"Warning",
-                             ];
-    
-    if (alertTitleType >= alertTitles.count) {
-        
-        ALog("alertTitleType >= alertTitles.count");
-        
-        return EmptyString;
-    }
-    
-    return alertTitles[alertTitleType];
-}
-
-- (NSString *)buttonTitleString:(AlertButtonType)alertButtonType
-{
-    NSArray *alertButtons = @[
-                             @"OK",
-                             @"YES",
-                             @"NO",
-                             ];
-    
-    if (alertButtonType >= alertButtons.count) {
-        
-        ALog("alertButtonType >= alertButtons.count");
-        
-        return EmptyString;
-    }
-    
-    return alertButtons[alertButtonType];
 }
 
 @end

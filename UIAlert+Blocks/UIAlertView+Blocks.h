@@ -6,35 +6,41 @@
 //  Copyright (c) 2014 Bogdan Stasjuk. All rights reserved.
 //
 
-typedef NS_ENUM(NSUInteger, AlertTitleType)
+typedef NS_ENUM(NSUInteger, UIAlertTitleType)
 {
-    AlertTitleWarning,
+    UIAlertTitleWarning,
 };
 
-typedef NS_ENUM(NSUInteger, AlertButtonType)
+typedef NS_ENUM(NSUInteger, UIAlertButtonType)
 {
-    AlertButtonOk,
-    AlertButtonYes,
-    AlertButtonNo,
+    UIAlertButtonOk,
+    UIAlertButtonYes,
+    UIAlertButtonNo,
 };
 
 
 @interface UIAlertView (Blocks)
 
-- (id)initWithTitle:(NSString *)title message:(NSString *)message;
-- (id)initWithTitleType:(AlertTitleType)titleType message:(NSString *)message;
+#pragma mark - Methods
 
-- (id)initWarningWithMessage:(NSString *)message;
-- (id)initWarningWithMessage:(NSString *)message andCancelBlock:(void(^)())cancel;
+#pragma mark -static
+
++ (NSString *)getTitle:(UIAlertTitleType)alertTitleType;
++ (NSString *)getButtonTitle:(UIAlertButtonType)alertButtonType;
+
+#pragma mark -nonstatic
+
+- (id)initWithTitle:(NSString *)title message:(NSString *)message;
+- (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message;
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
   cancelButtonTitle:(NSString *)cancelButtonTitle cancelBlock:(void(^)())cancelBlock
  proceedButtonTitle:(NSString *)proceedButtonTitle proceedBlock:(void(^)())proceedBlock;
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
-   cancelButtonType:(AlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
-  proceedButtonType:(AlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock;
-- (id)initWithTitleType:(AlertTitleType)titleType message:(NSString *)message
-  cancelButtonType:(AlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
- proceedButtonType:(AlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock;
+   cancelButtonType:(UIAlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
+  proceedButtonType:(UIAlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock;
+- (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message
+  cancelButtonType:(UIAlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
+ proceedButtonType:(UIAlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock;
 
 @end

@@ -22,6 +22,7 @@ typedef NS_ENUM(NSUInteger, AlertButtonType)
 @interface UIAlertView (Blocks)
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message;
+- (id)initWithTitleType:(AlertTitleType)titleType message:(NSString *)message;
 
 - (id)initWarningWithMessage:(NSString *)text;
 - (id)initWarningWithMessage:(NSString *)message andCancelBlock:(void(^)())cancel;
@@ -29,6 +30,9 @@ typedef NS_ENUM(NSUInteger, AlertButtonType)
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
   cancelButtonTitle:(NSString *)cancelButtonTitle cancelBlock:(void(^)())cancelBlock
  proceedButtonTitle:(NSString *)proceedButtonTitle proceedBlock:(void(^)())proceedBlock;
+- (id)initWithTitle:(NSString *)title message:(NSString *)message
+   cancelButtonType:(AlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
+  proceedButtonType:(AlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock;
 - (id)initWithTitleType:(AlertTitleType)titleType message:(NSString *)message
   cancelButtonType:(AlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
  proceedButtonType:(AlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock;

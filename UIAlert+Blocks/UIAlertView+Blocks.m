@@ -35,6 +35,16 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
     return self;
 }
 
+- (id)initWithTitleType:(AlertTitleType)titleType message:(NSString *)message
+{
+    NSString *title = [self titleString:titleType];
+    self = [self initWithTitle:title message:message];
+    if (self) {
+        
+    }
+    return self;
+}
+
 - (id)initWarningWithMessage:(NSString *)message
 {
     self = [self initWithTitle:[self titleString:AlertTitleWarning] message:message];
@@ -69,6 +79,19 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
     return self;
 }
 
+- (id)initWithTitle:(NSString *)title message:(NSString *)message
+       cancelButtonType:(AlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
+      proceedButtonType:(AlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock
+{
+    NSString *cancelBtnTitle = [self buttonTitleString:cancelButtonType];
+    NSString *proceedBtnTitle = [self buttonTitleString:proceedButtonType];
+    self = [self initWithTitle:title message:message cancelButtonTitle:cancelBtnTitle cancelBlock:cancelBlock proceedButtonTitle:proceedBtnTitle proceedBlock:proceedBlock];
+    if (self) {
+        
+    }
+    return self;
+}
+
 - (id)initWithTitleType:(AlertTitleType)titleType message:(NSString *)message
        cancelButtonType:(AlertButtonType)cancelButtonType cancelBlock:(void(^)())cancelBlock
       proceedButtonType:(AlertButtonType)proceedButtonType proceedBlock:(void(^)())proceedBlock
@@ -78,7 +101,6 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
     NSString *proceedBtnTitle = [self buttonTitleString:proceedButtonType];
     self = [self initWithTitle:title message:message cancelButtonTitle:cancelBtnTitle cancelBlock:cancelBlock proceedButtonTitle:proceedBtnTitle proceedBlock:proceedBlock];
     if (self) {
-        
         
     }
     return self;

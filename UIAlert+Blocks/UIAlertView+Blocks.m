@@ -32,36 +32,36 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
 
 + (NSString *)getTitle:(UIAlertTitleType)alertTitleType
 {
-    NSArray *alertTitles = @[
-                             @"Warning",
-                             ];
-    
-    if (alertTitleType >= alertTitles.count) {
-        
-        ALog("alertTitleType beyond the alertTitles array");
-        
-        return EmptyString;
+    NSString *title = EmptyString;
+    switch (alertTitleType) {
+        case UIAlertTitleWarning:
+            title = @"Warning";
+            break;
+        default:
+            ALog("There is no such alertTitleType in UIAlertTitleType enum. Please add the missing record.");
+            break;
     }
-    
-    return alertTitles[alertTitleType];
+    return title;
 }
 
 + (NSString *)getButtonTitle:(UIAlertButtonType)alertButtonType
 {
-    NSArray *alertButtons = @[
-                              @"OK",
-                              @"YES",
-                              @"NO",
-                              ];
-    
-    if (alertButtonType >= alertButtons.count) {
-        
-        ALog("alertButtonType beyond the alertButtonTitles array");
-        
-        return EmptyString;
+    NSString *title = EmptyString;
+    switch (alertButtonType) {
+        case UIAlertButtonNo:
+            title = @"NO";
+            break;
+        case UIAlertButtonOk:
+            title = @"OK";
+            break;
+        case UIAlertButtonYes:
+            title = @"YES";
+            break;
+        default:
+            ALog("There is no such alertButtonType in UIAlertButtonType enum. Please add the missing record.");
+            break;
     }
-    
-    return alertButtons[alertButtonType];
+    return title;
 }
 
 

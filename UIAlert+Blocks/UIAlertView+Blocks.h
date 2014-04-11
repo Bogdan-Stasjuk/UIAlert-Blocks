@@ -36,7 +36,7 @@ typedef NS_ENUM(NSUInteger, UIAlertButtonType)
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
         buttonTitle:(NSString *)buttonTitle block:(void(^)())block;
 - (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message
-        buttonTitleType:(UIAlertButtonType)buttonType block:(void(^)())block;
+        buttonType:(UIAlertButtonType)buttonType block:(void(^)())block;
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
   cancelButtonTitle:(NSString *)cancelButtonTitle cancelBlock:(void(^)())cancelBlock

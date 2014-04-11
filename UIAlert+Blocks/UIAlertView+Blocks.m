@@ -87,7 +87,7 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
 }
 
 - (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message
-        buttonTitleType:(UIAlertButtonType)buttonType block:(void(^)())block
+        buttonType:(UIAlertButtonType)buttonType block:(void(^)())block
 {
     NSString *title = [[self class] getTitle:titleType];
     NSString *btnTitle = [[self class] getButtonTitle:buttonType];

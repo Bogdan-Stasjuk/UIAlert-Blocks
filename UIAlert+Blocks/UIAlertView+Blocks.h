@@ -9,6 +9,7 @@
 typedef NS_ENUM(NSUInteger, UIAlertTitleType)
 {
     UIAlertTitleWarning,
+    UIAlertTitleInfo,
 };
 
 typedef NS_ENUM(NSUInteger, UIAlertButtonType)

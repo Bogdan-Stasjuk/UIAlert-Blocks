@@ -37,6 +37,9 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
         case UIAlertTitleWarning:
             title = @"Warning";
             break;
+        case UIAlertTitleInfo:
+            title = @"Information";
+            break;
         default:
             ALog("There is no such alertTitleType in UIAlertTitleType enum. Please add the missing record.");
             break;

@@ -1,0 +1,10 @@
+/* Localized versions of Info.plist keys */
+
+// UIAlert+Blocks button titles
+"UIALERT_BUTTON_TITLE_YES"  = "ДА";
+"UIALERT_BUTTON_TITLE_NO"   = "НЕТ";
+"UIALERT_BUTTON_TITLE_OK"   = "ОК";
+
+// UIAlert+Blocks titles
+"UIALERT_TITLE_WARNING"     = "Предупреждение";
+"UIALERT_TITLE_INFO"        = "Информация";

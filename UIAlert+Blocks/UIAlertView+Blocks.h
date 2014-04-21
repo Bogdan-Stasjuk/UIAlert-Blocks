@@ -6,6 +6,19 @@
 //  Copyright (c) 2014 Bogdan Stasjuk. All rights reserved.
 //
 
+/*
+ key-value pairs for Localizable.strings
+ 
+ // UIAlert+Blocks button titles
+ "UIALERT_BUTTON_TITLE_YES"  = "YES";
+ "UIALERT_BUTTON_TITLE_NO"   = "NO";
+ "UIALERT_BUTTON_TITLE_OK"   = "OK";
+ 
+ // UIAlert+Blocks titles
+ "UIALERT_TITLE_WARNING"     = "Warning";
+ "UIALERT_TITLE_INFO"        = "Information";
+ */
+
 typedef NS_ENUM(NSUInteger, UIAlertTitleType)
 {
     UIAlertTitleWarning,
@@ -26,8 +39,8 @@ typedef NS_ENUM(NSUInteger, UIAlertButtonType)
 
 #pragma mark -static
 
-+ (NSString *)getTitle:(UIAlertTitleType)alertTitleType;
-+ (NSString *)getButtonTitle:(UIAlertButtonType)alertButtonType;
++ (NSString *)titleFor:(UIAlertTitleType)alertTitleType;
++ (NSString *)buttonTitleFor:(UIAlertButtonType)alertButtonType;
 
 #pragma mark -nonstatic
 

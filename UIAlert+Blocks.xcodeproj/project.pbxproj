@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B2A633F19052656008446AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A633A19052656008446AB /* Localizable.strings */; };
+		4B2A634019052656008446AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A633D19052656008446AB /* Localizable.strings */; };
 		4BADCAE818DE251500D75A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCAE718DE251500D75A68 /* Foundation.framework */; };
 		4BADCAEA18DE251500D75A68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCAE918DE251500D75A68 /* CoreGraphics.framework */; };
 		4BADCAEC18DE251500D75A68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCAEB18DE251500D75A68 /* UIKit.framework */; };
 		4BADCB0118DE251500D75A68 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCB0018DE251500D75A68 /* XCTest.framework */; };
 		4BADCB0218DE251500D75A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCAE718DE251500D75A68 /* Foundation.framework */; };
 		4BADCB0318DE251500D75A68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BADCAEB18DE251500D75A68 /* UIKit.framework */; };
-		4BADCB0B18DE251500D75A68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BADCB0918DE251500D75A68 /* InfoPlist.strings */; };
 		4BADCB0D18DE251500D75A68 /* UIAlert_BlocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BADCB0C18DE251500D75A68 /* UIAlert_BlocksTests.m */; };
 		4BD34F4B18DE315600B11AD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD34F3018DE315600B11AD5 /* AppDelegate.m */; };
 		4BD34F4C18DE315600B11AD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD34F3118DE315600B11AD5 /* main.m */; };
@@ -33,14 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B2A633B19052656008446AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		4B2A633E19052656008446AB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Localizable.strings; sourceTree = "<group>"; };
 		4BADCAE418DE251500D75A68 /* UIAlert+Blocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIAlert+Blocks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BADCAE718DE251500D75A68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BADCAE918DE251500D75A68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4BADCAEB18DE251500D75A68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4BADCAFF18DE251500D75A68 /* UIAlert+BlocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIAlert+BlocksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BADCB0018DE251500D75A68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4BADCB0818DE251500D75A68 /* UIAlert+BlocksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIAlert+BlocksTests-Info.plist"; sourceTree = "<group>"; };
-		4BADCB0A18DE251500D75A68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BADCB0C18DE251500D75A68 /* UIAlert_BlocksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAlert_BlocksTests.m; sourceTree = "<group>"; };
 		4BD34F2F18DE315600B11AD5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4BD34F3018DE315600B11AD5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		4BD34F3518DE315600B11AD5 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		4BD34F3618DE315600B11AD5 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		4BD34F3E18DE315600B11AD5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4BD34F4518DE315600B11AD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BD34F5218DE323500B11AD5 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		4BD34F5318DE323500B11AD5 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B2A633919052656008446AB /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A633A19052656008446AB /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		4B2A633C19052656008446AB /* ru.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A633D19052656008446AB /* Localizable.strings */,
+			);
+			path = ru.lproj;
+			sourceTree = "<group>";
+		};
 		4BADCADB18DE251500D75A68 = {
 			isa = PBXGroup;
 			children = (
@@ -130,18 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				4BADCB0C18DE251500D75A68 /* UIAlert_BlocksTests.m */,
-				4BADCB0718DE251500D75A68 /* Supporting Files */,
 			);
 			path = "UIAlert+BlocksTests";
-			sourceTree = "<group>";
-		};
-		4BADCB0718DE251500D75A68 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4BADCB0818DE251500D75A68 /* UIAlert+BlocksTests-Info.plist */,
-				4BADCB0918DE251500D75A68 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4BD34F2E18DE315600B11AD5 /* Application */ = {
@@ -261,7 +267,8 @@
 		4BD34F4318DE315600B11AD5 /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
-				4BD34F4418DE315600B11AD5 /* InfoPlist.strings */,
+				4B2A633919052656008446AB /* en.lproj */,
+				4B2A633C19052656008446AB /* ru.lproj */,
 			);
 			path = Localizations;
 			sourceTree = "<group>";
@@ -372,6 +379,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 			);
 			mainGroup = 4BADCADB18DE251500D75A68;
 			productRefGroup = 4BADCAE518DE251500D75A68 /* Products */;
@@ -390,6 +398,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD34F4F18DE315600B11AD5 /* Images.xcassets in Resources */,
+				4B2A634019052656008446AB /* Localizable.strings in Resources */,
+				4B2A633F19052656008446AB /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +407,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BADCB0B18DE251500D75A68 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,20 +443,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4BADCB0918DE251500D75A68 /* InfoPlist.strings */ = {
+		4B2A633A19052656008446AB /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4BADCB0A18DE251500D75A68 /* en */,
+				4B2A633B19052656008446AB /* en */,
 			);
-			name = InfoPlist.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		4BD34F4418DE315600B11AD5 /* InfoPlist.strings */ = {
+		4B2A633D19052656008446AB /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4BD34F4518DE315600B11AD5 /* en */,
+				4B2A633E19052656008446AB /* ru */,
 			);
-			name = InfoPlist.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,10 +1,8 @@
 Pod::Spec.new do |s|
   s.name             	= "UIAlert+Blocks"
   s.version          	= "0.1.0"
-  s.summary          	= "Simple category on UIAlertView for using blocks instead of delegate methods."
-  s.description      	= <<-DESC
-
-                       DESC
+  s.summary          	= "A category on UIAlertView for using blocks instead of delegate methods."
+  s.description      	= "A cetogory on UIAlertView that add blocks and button titles enums. Handy and clear methods that save from using delegation."
   s.homepage         	= "https://github.com/Bogdan-Stasjuk/UIAlert-Blocks"
   s.license      		= { :type => 'MIT', :file => 'LICENSE' }
   s.author           	= { "Bogdan Stasjuk" => "Bogdan.Stasjuk@gmail.com" }

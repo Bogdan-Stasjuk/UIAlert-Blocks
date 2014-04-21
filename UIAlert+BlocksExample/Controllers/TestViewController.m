@@ -22,23 +22,26 @@
 {
     [super viewDidLoad];
 
-    [[[UIAlertView alloc] initWithTitle:[UIAlertView getTitle:UIAlertTitleWarning] message:@"Some warning message"] show];
+    [[[UIAlertView alloc] initWithTitleType:UIAlertTitleWarning message:@"Some warning message"] show];
     
-    [[[UIAlertView alloc] initWithTitle:[UIAlertView getTitle:UIAlertTitleWarning] message:@"Warning with cancel block" cancelButtonTitle:@"Cancel" cancelBlock:^{
-        
-        [[[UIAlertView alloc] initWithTitle:@"Block" message:@"It is cancel block"] show];
-        
-    } proceedButtonTitle:[UIAlertView getButtonTitle:UIAlertButtonOk] proceedBlock:nil] show];
+    [[[UIAlertView alloc] initWithTitle:[UIAlertView titleFor:UIAlertTitleWarning]
+                                message:@"Warning with cancel block"
+                      cancelButtonTitle:@"Cancel"
+                            cancelBlock:^{
+                                 [[[UIAlertView alloc] initWithTitle:@"Block" message:@"It is cancel block"] show];
+                            }
+                     proceedButtonTitle:[UIAlertView buttonTitleFor:UIAlertButtonOk] proceedBlock:nil] show];
     
-    [[[UIAlertView alloc] initWithTitle:@"Test 2 blocks" message:@"2 blocks test.\nAre you agree?" cancelButtonTitle:@"NO" cancelBlock:^{
-        
-        [[[UIAlertView alloc] initWithTitle:@"Block NO" message:@"It is cancel block"] show];
-        
-    } proceedButtonTitle:@"YES" proceedBlock:^{
-        
-        [[[UIAlertView alloc] initWithTitle:@"Block YES" message:@"It is proceed block"] show];
-
-    }] show];
+    [[[UIAlertView alloc] initWithTitle:@"Test 2 blocks"
+                                message:@"2 blocks test.\nAre you agree?"
+                      cancelButtonTitle:[UIAlertView buttonTitleFor:UIAlertButtonNo]
+                            cancelBlock:^{
+                                [[[UIAlertView alloc] initWithTitle:@"Block NO" message:@"It is cancel block"] show];
+                            }
+                     proceedButtonTitle:[UIAlertView buttonTitleFor:UIAlertButtonYes]
+                           proceedBlock:^{
+                               [[[UIAlertView alloc] initWithTitle:@"Block YES" message:@"It is proceed block"] show];
+                           }] show];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,16 +49,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -66,7 +66,7 @@ All names can be localized or redefined in Localizable.strings files using key-v
 Demo
 ====
 
-Clone project and run it. You can find examples of usage at 'TestViewController.m'. Examples of localization you can see at 'UIAlert+BlocksExample/Resources/Localizations'.
+Clone project and run it. You can find examples of usage at `TestViewController.m`. Examples of localization you can see at `UIAlert+BlocksExample/Resources/Localizations`.
 
 
 Compatibility

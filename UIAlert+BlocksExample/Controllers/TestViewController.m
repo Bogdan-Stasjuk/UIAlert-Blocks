@@ -8,7 +8,7 @@
 
 #import "TestViewController.h"
 
-#import "UIAlertView+Blocks.h"
+#import "UIAlert+Blocks.h"
 
 
 @interface TestViewController ()

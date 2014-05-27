@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Bogdan Stasjuk. All rights reserved.
 //
 
-#import "UIAlertView+Blocks.h"
+#import "UIAlert+Blocks.h"
 
 #import <objc/runtime.h>
 

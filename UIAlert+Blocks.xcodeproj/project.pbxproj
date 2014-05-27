@@ -20,7 +20,7 @@
 		4BD34F4C18DE315600B11AD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD34F3118DE315600B11AD5 /* main.m */; };
 		4BD34F4E18DE315600B11AD5 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD34F3618DE315600B11AD5 /* TestViewController.m */; };
 		4BD34F4F18DE315600B11AD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD34F3E18DE315600B11AD5 /* Images.xcassets */; };
-		4BD34F5418DE323500B11AD5 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD34F5318DE323500B11AD5 /* UIAlertView+Blocks.m */; };
+		4BD34F5418DE323500B11AD5 /* UIAlert+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD34F5318DE323500B11AD5 /* UIAlert+Blocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		4BD34F3518DE315600B11AD5 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		4BD34F3618DE315600B11AD5 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		4BD34F3E18DE315600B11AD5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4BD34F5218DE323500B11AD5 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
-		4BD34F5318DE323500B11AD5 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		4BD34F5218DE323500B11AD5 /* UIAlert+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlert+Blocks.h"; sourceTree = "<group>"; };
+		4BD34F5318DE323500B11AD5 /* UIAlert+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlert+Blocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,8 +315,8 @@
 		4BD34F5118DE31AC00B11AD5 /* UIAlert+Blocks */ = {
 			isa = PBXGroup;
 			children = (
-				4BD34F5218DE323500B11AD5 /* UIAlertView+Blocks.h */,
-				4BD34F5318DE323500B11AD5 /* UIAlertView+Blocks.m */,
+				4BD34F5218DE323500B11AD5 /* UIAlert+Blocks.h */,
+				4BD34F5318DE323500B11AD5 /* UIAlert+Blocks.m */,
 			);
 			path = "UIAlert+Blocks";
 			sourceTree = "<group>";
@@ -418,7 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD34F4E18DE315600B11AD5 /* TestViewController.m in Sources */,
-				4BD34F5418DE323500B11AD5 /* UIAlertView+Blocks.m in Sources */,
+				4BD34F5418DE323500B11AD5 /* UIAlert+Blocks.m in Sources */,
 				4BD34F4C18DE315600B11AD5 /* main.m in Sources */,
 				4BD34F4B18DE315600B11AD5 /* AppDelegate.m in Sources */,
 			);

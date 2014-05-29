@@ -72,7 +72,7 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
 {
-    self = [self initWithTitle:title message:message delegate:nil cancelButtonTitle:[[self class] buttonTitleFor:UIAlertButtonOk] otherButtonTitles:nil];
+    self = [self initWithTitle:title message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
     if (self) {
         
     }
@@ -88,6 +88,27 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
     }
     return self;
 }
+
+- (id)initWithTitle:(NSString *)title message:(NSString *)message buttonTitle:(NSString *)buttonTitle
+{
+    self = [self initWithTitle:title message:message delegate:nil cancelButtonTitle:buttonTitle otherButtonTitles:nil];
+    if (self) {
+        
+    }
+    return self;
+}
+
+- (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message buttonType:(UIAlertButtonType)buttonType
+{
+    NSString *title = [[self class] titleFor:titleType];
+    NSString *btnTitle = [[self class] buttonTitleFor:buttonType];
+    self = [self initWithTitle:title message:message buttonTitle:btnTitle];
+    if (self) {
+        
+    }
+    return self;
+}
+
 
 - (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message
         buttonType:(UIAlertButtonType)buttonType block:(void(^)())block

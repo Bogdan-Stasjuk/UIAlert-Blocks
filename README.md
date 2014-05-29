@@ -46,6 +46,9 @@ All names can be localized or redefined in Localizable.strings files using key-v
 - (id)initWithTitle:(NSString *)title message:(NSString *)message;
 - (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message;
 
+- (id)initWithTitle:(NSString *)title message:(NSString *)message buttonTitle:(NSString *)buttonTitle;
+- (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message buttonType:(UIAlertButtonType)buttonType;
+
 - (id)initWithTitle:(NSString *)title message:(NSString *)message
         buttonTitle:(NSString *)buttonTitle block:(void(^)())block;
 - (id)initWithTitleType:(UIAlertTitleType)titleType message:(NSString *)message

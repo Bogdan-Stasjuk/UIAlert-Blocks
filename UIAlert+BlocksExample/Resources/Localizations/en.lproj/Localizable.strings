@@ -8,3 +8,4 @@
 // UIAlert+Blocks titles
 "UIALERT_TITLE_WARNING"     = "Warning";
 "UIALERT_TITLE_INFO"        = "Information";
+"UIALERT_TITLE_CONFIRM"     = "Confirmation";

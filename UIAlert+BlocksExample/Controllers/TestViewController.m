@@ -18,8 +18,7 @@
 
 @implementation TestViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [[[UIAlertView alloc] initWithTitle:[UIAlertView titleFor:UIAlertTitleWarning]
@@ -40,12 +39,6 @@
                            proceedBlock:^{
                                [[[UIAlertView alloc] initWithTitleType:UIAlertTitleWarning message:@"Your app is blocked"] show];
                            }] show];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

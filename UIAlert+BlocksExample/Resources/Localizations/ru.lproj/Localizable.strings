@@ -8,3 +8,4 @@
 // UIAlert+Blocks titles
 "UIALERT_TITLE_WARNING"     = "Предупреждение";
 "UIALERT_TITLE_INFO"        = "Информация";
+"UIALERT_TITLE_CONFIRM"     = "Подтверждение";

@@ -19,14 +19,13 @@
  "UIALERT_TITLE_INFO"        = "Information";
  */
 
-typedef NS_ENUM(NSUInteger, UIAlertTitleType)
-{
+typedef NS_ENUM(NSUInteger, UIAlertTitleType) {
     UIAlertTitleWarning,
     UIAlertTitleInfo,
+    UIAlertTitleConfirm,
 };
 
-typedef NS_ENUM(NSUInteger, UIAlertButtonType)
-{
+typedef NS_ENUM(NSUInteger, UIAlertButtonType) {
     UIAlertButtonOk,
     UIAlertButtonYes,
     UIAlertButtonNo,

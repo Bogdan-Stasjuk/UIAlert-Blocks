@@ -368,6 +368,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Bogdan Stasjuk";
 				TargetAttributes = {
+					4BADCAE318DE251500D75A68 = {
+						DevelopmentTeam = 8F6JY4MWEV;
+					};
 					4BADCAFE18DE251500D75A68 = {
 						TestTargetID = 4BADCAE318DE251500D75A68;
 					};

@@ -6,14 +6,13 @@ A category on UIAlertView for using blocks instead of delegation methods with en
 ##Enums for titles and buttons
 
 ```objc
-typedef NS_ENUM(NSUInteger, UIAlertTitleType)
-{
+typedef NS_ENUM(UInt8, UIAlertTitleType) {
     UIAlertTitleWarning,
     UIAlertTitleInfo,
+    UIAlertTitleConfirm,
 };
 
-typedef NS_ENUM(NSUInteger, UIAlertButtonType)
-{
+typedef NS_ENUM(UInt8, UIAlertButtonType) {
     UIAlertButtonOk,
     UIAlertButtonYes,
     UIAlertButtonNo,
@@ -23,14 +22,15 @@ typedef NS_ENUM(NSUInteger, UIAlertButtonType)
 All names can be localized or redefined in Localizable.strings files using key-value pairs below:
 
 ```objc
- // UIAlert+Blocks button titles
+ // UIAlertView button's titles
  "UIALERT_BUTTON_TITLE_YES"  = "YES";
  "UIALERT_BUTTON_TITLE_NO"   = "NO";
  "UIALERT_BUTTON_TITLE_OK"   = "OK";
  
- // UIAlert+Blocks titles
+ // UIAlertView's titles
  "UIALERT_TITLE_WARNING"     = "Warning";
  "UIALERT_TITLE_INFO"        = "Information";
+ "UIALERT_TITLE_CONFIRM"     = "Confirmation";
 ```
 
 ##Static methods

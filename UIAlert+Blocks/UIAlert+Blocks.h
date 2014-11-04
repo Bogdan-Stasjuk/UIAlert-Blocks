@@ -9,23 +9,24 @@
 /*
  key-value pairs for Localizable.strings
  
- // UIAlert+Blocks button titles
+ // UIAlertView button's titles
  "UIALERT_BUTTON_TITLE_YES"  = "YES";
  "UIALERT_BUTTON_TITLE_NO"   = "NO";
  "UIALERT_BUTTON_TITLE_OK"   = "OK";
  
- // UIAlert+Blocks titles
+ // UIAlertView's titles
  "UIALERT_TITLE_WARNING"     = "Warning";
  "UIALERT_TITLE_INFO"        = "Information";
- */
+ "UIALERT_TITLE_CONFIRM"     = "Confirmation";
+*/
 
-typedef NS_ENUM(NSUInteger, UIAlertTitleType) {
+typedef NS_ENUM(UInt8, UIAlertTitleType) {
     UIAlertTitleWarning,
     UIAlertTitleInfo,
     UIAlertTitleConfirm,
 };
 
-typedef NS_ENUM(NSUInteger, UIAlertButtonType) {
+typedef NS_ENUM(UInt8, UIAlertButtonType) {
     UIAlertButtonOk,
     UIAlertButtonYes,
     UIAlertButtonNo,

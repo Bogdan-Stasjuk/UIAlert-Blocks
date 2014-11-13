@@ -18,12 +18,14 @@
  "UIALERT_TITLE_WARNING"     = "Warning";
  "UIALERT_TITLE_INFO"        = "Information";
  "UIALERT_TITLE_CONFIRM"     = "Confirmation";
+ "UIALERT_TITLE_ERROR"       = "Error";
 */
 
 typedef NS_ENUM(UInt8, UIAlertTitleType) {
     UIAlertTitleWarning,
     UIAlertTitleInfo,
     UIAlertTitleConfirm,
+    UIAlertTitleError,
 };
 
 typedef NS_ENUM(UInt8, UIAlertButtonType) {

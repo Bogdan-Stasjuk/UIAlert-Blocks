@@ -38,6 +38,8 @@ static NSString *proceedBlockKey = @"alertViewProceedBlock";
             return NSLocalizedStringWithDefaultValue(@"UIALERT_TITLE_INFO", nil, [NSBundle mainBundle], @"Information", @"Title 'Information' for UIAlertView");
         case UIAlertTitleConfirm:
             return NSLocalizedStringWithDefaultValue(@"UIALERT_TITLE_CONFIRM", nil, [NSBundle mainBundle], @"Confirmation", @"Title 'Confirmation' for UIAlertView");
+        case UIAlertTitleError:
+            return NSLocalizedStringWithDefaultValue(@"UIALERT_TITLE_ERROR", nil, [NSBundle mainBundle], @"Error", @"Title 'Error' for UIAlertView");
             
         default:
             ALog("There is no such alertTitleType in UIAlertTitleType enum. Please add the missing record.");

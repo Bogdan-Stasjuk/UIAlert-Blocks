@@ -9,3 +9,4 @@
 "UIALERT_TITLE_WARNING"     = "Предупреждение";
 "UIALERT_TITLE_INFO"        = "Информация";
 "UIALERT_TITLE_CONFIRM"     = "Подтверждение";
+"UIALERT_TITLE_ERROR"       = "Ошибка";

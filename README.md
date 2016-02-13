@@ -81,7 +81,7 @@ This class has been tested back to iOS 6.0.
 Installation
 ============
 
-__Cocoapods__: `pod 'UIAlert+Blocks'`<br />
+__CocoaPods__: `pod 'UIAlert+Blocks'`<br />
 __Manual__: Copy the __UIAlert+Blocks__ folder in your project<br />
 
 Import header in your project. .pch is a good place ;)
